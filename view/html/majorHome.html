@@ -1,0 +1,2913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../resource/images/home/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="../../node_modules/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="//nos.netease.com/vod163/nep.min.js"></script>
+    <link href="//nos.netease.com/vod163/nep.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/major.css">
+
+
+</head>
+<body>
+<header class="head">
+    <div class="head-left flex">
+        <a href="./home.html">
+            <img class="head-logo" src="../../resource/images/home/logo.png" alt="">
+        </a>
+    </div>
+    <div class="head-center flex">
+        <div class="flex">
+            <a id="career-page" onclick="contentScroll(0)">课程首页</a>
+        </div>
+        <div class="flex maybe">
+            <a id="micro-class" onclick="contentScroll(1)">微课
+                <i class="fa fa-angle-down"></i>
+                <ul class="list-head">
+                    <li class="cColor"><a href="">计算机</a></li>
+                    <li class="cColor"><a href="">会计</a></li>
+                    <li class="cColor"><a href="">金融理财</a></li>
+                    <li class="cColor"><a href="">机械设计</a></li>
+                    <li class="cColor"><a href="">商务英语</a></li>
+                </ul>
+            </a>
+        </div>
+        <div class="flex"><a id="question-bank" onclick="contentScroll(2)" >题库<i class="fa fa-angle-down"></i></a></div>
+        <div class="flex"><a href="">考务<i class="fa fa-angle-down"></i></a></div>
+        <div class="flex"><a href="">问答</a></div>
+        <div class="flex"><a href="">我的课程</a></div>
+    </div>
+    <div class="flex">
+        <div class="detail-right">
+            <div class="flex ">
+                <div class="user-logo">
+                    <span class="one">个人中心</span>
+                    <img src="../../resource/images/majorHome/head_user.png" alt="">
+                    <i class="fa fa-caret-down " id="user-list"></i>
+                    <ul class="test">
+                        <li class="cColor"><a href="">计算机</a></li>
+                        <li class="cColor"><a href="">会计</a></li>
+                        <li class="cColor"><a href="">金融理财</a></li>
+                        <li class="cColor"><a href="">机械设计</a></li>
+                        <li class="cColor"><a href="">商务英语</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content-all">
+    <div class="container-total">
+        <div id="container-scroll">
+            <div class="container0 flex">
+                <div class="fix-frame">
+                    <ul>
+                        <li class="small-photo">
+                            <span class="qian"></span>
+                            <div class="sign-in-layer1">
+                                <i class=" fa fa-caret-right trigon"></i>
+                                <h4 class="fontWeight600">累计签到<span>1</span>天</h4>
+                                <p><b>学习是苦根上长出来的甜果。</b></p>
+                                <p class="text-right">——李嘉图</p>
+                            </div>
+                        </li>
+                        <li class="small-photo">
+                            <span class="notice"></span>
+
+                        </li>
+                        <li class="small-photo border0">
+                            <span class="ask"></span>
+                        </li>
+                    </ul>
+                </div>
+                <section class="section1">
+                    <div class="sec1-content">
+                        <div class="sec1-left">
+                            <p class="sec1-left-up">首页 <i class="fa fa-angle-right"> </i> <span
+                                    class="sec1-left-up-small">课程首页</span></p>
+                            <nav class="box1">
+                                <div class="box-item not-margin-left" onclick="Choice(1)">行政管理</div>
+                                <div class="box-item" onclick="Choice(2)">工商企业管理</div>
+                                <div class="box-item" onclick="Choice(3)">计算机及应用</div>
+                                <div class="box-item" onclick="Choice(4)">汉语言文学</div>
+                                <div class="box-item" onclick="Choice(5)">建筑工程</div>
+                            </nav>
+                            <div class="hidden-movie">
+                                <div class="long-content">
+                                    <div class="sec1-content-left-bottom">
+                                        <video preload="metadata" class="video-js major-movie" x-webkit-airplay="allow"
+                                               webkit-playsinline controls poster="../../resource/images/majorHome/beauty.jpg"
+                                               preload="auto" data-setup="{}">
+                                            <source src="../../resource/vedio/major_movie.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="bgColor">
+                                            <h1>2017四川自学考试课程</h1>
+                                            <h1>用讲师实力助你一次通关1</h1>
+                                            <button class="movie-btn" onclick="playPause(1)">课程介绍</button>
+                                        </div>
+                                    </div>
+                                    <div class="sec1-content-left-bottom">
+                                        <video preload="metadata" class="video-js major-movie" x-webkit-airplay="allow"
+                                               webkit-playsinline controls poster="../../resource/images/majorHome/beauty.jpg"
+                                               preload="auto" data-setup="{}">
+                                            <!--<source src="../../resource/vedio/major_movie.mp4" type="video/mp4">-->
+                                        </video>
+                                        <div class="bgColor">
+                                            <h1>2017四川自学考试课程</h1>
+                                            <h1>用讲师实力助你一次通关2</h1>
+                                            <button class="movie-btn" onclick="playPause(2)">课程介绍</button>
+                                        </div>
+                                    </div>
+                                    <div class="sec1-content-left-bottom">
+                                        <video class="video-js major-movie" x-webkit-airplay="allow" preload="metadata"
+                                               webkit-playsinline controls poster="../../resource/images/majorHome/beauty.jpg"
+                                               preload="auto" data-setup="{}">
+                                            <!--<source src="../../resource/vedio/major_movie.mp4" type="video/mp4">-->
+                                        </video>
+                                        <div class="bgColor">
+                                            <h1>2017四川自学考试课程</h1>
+                                            <h1>用讲师实力助你一次通关3</h1>
+                                            <button class="movie-btn" onclick="playPause(3)">课程介绍</button>
+                                        </div>
+                                    </div>
+                                    <div class="sec1-content-left-bottom">
+                                        <video preload="metadata" class="video-js major-movie" x-webkit-airplay="allow"
+                                               webkit-playsinline controls poster="../../resource/images/majorHome/beauty.jpg"
+                                               preload="auto" data-setup="{}">
+                                            <!--<source src="../../resource/vedio/major_movie.mp4" type="video/mp4">-->
+                                        </video>
+                                        <div class="bgColor">
+                                            <h1>2017四川自学考试课程</h1>
+                                            <h1>用讲师实力助你一次通关4</h1>
+                                            <button class="movie-btn" onclick="playPause(4)">课程介绍</button>
+                                        </div>
+                                    </div>
+                                    <div class="sec1-content-left-bottom">
+                                        <video preload="metadata" class="video-js major-movie" x-webkit-airplay="allow"
+                                               webkit-playsinline controls poster="../../resource/images/majorHome/beauty.jpg"
+                                               preload="auto" data-setup="{}">
+                                            <!--<source src="../../resource/vedio/major_movie.mp4" type="video/mp4">-->
+                                        </video>
+                                        <div class="bgColor">
+                                            <h1>2017四川自学考试课程</h1>
+                                            <h1>用讲师实力助你一次通关5</h1>
+                                            <button class="movie-btn" onclick="playPause(5)">课程介绍</button>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="sec1-right">
+                            <img class="user-logo-big" src="../../resource/images/majorHome/head_middle.png" alt="">
+                            <div class="sec1-right-head-right">
+                                <h3 class="user-color">汤谷用户1</h3>
+                                <p>
+                                    <img src="../../resource/images/majorHome/member.png" alt="">
+                                    <span>普通用户</span>
+                                </p>
+                            </div>
+                            <div class="sec1-right-middle">
+                                <img src="../../resource/images/majorHome/icon1.png" alt="">
+                                <h2 class="set-center">暂时还未开通课程</h2>
+                            </div>
+                            <div class="sec1-right-bottom">
+                                <a href="" class="start-act" type="button">免费试学</a>
+                                <br>
+                                <a href="" class="start-act" type="button">开通课程</a>
+                            </div>
+
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+                </section>
+                <section class="section2">
+                    <div class="sec2-head">
+                        <img src="../../resource/images/majorHome/kaoshi.png" alt="">
+                        <h3 class="padding-15">为你提供最优价值的考试资讯及服务</h3>
+                        <div class="sec2-head-bottom">
+                            <div class="six-up">
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx1.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">考试时间</span>
+                                    </a>
+                                </div>
+                      <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx2.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">报考入口</span>
+                                    </a>
+                                </div>
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx3.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">准考证打印</span>
+                                    </a>
+                                </div>
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx4.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">预约领证</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="six-down">
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx5.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">证书真伪</span>
+                                    </a>
+                                </div>
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx6.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">教材购买</span>
+                                    </a>
+                                </div>
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx7.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">备考课程</span>
+                                    </a>
+                                </div>
+                                <div class="six">
+                                    <a href="" class="test-all">
+                                        <img src="../../resource/images/majorHome/bbx8.png" alt="">
+                                        <br/>
+                                        <span class="ownHeight30">考试资讯</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container1 flex">
+                <div class="width-limit">
+                    <div class="navAndSearch">
+                        <p class="nav-left"><span>首页</span> <i class="fa fa-angle-right"></i> <span>专业首页</span>
+                            <i class="fa fa-angle-right"></i> <span class="micro-nav">微课</span></p>
+                        <p class="nav-right"><input class="search-input" type="text" placeholder="搜索知识点或关键词"/><i
+                                class="fa fa-search fa-2x search-btn"></i></p>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="course">
+                        <div class="course-left">
+                            <p>专业：</p>
+                        </div>
+                        <div class="course-right">
+                            <a class="course-content aColor" href="">全部专业课程 <span>(116)</span></a>
+                            <a class="course-content " href="">公共课 <span>(20)</span></a>
+                            <a class="course-content " href="">计算机及应用 <span>(22)</span></a>
+                            <a class="course-content " href="">汉语言文学 <span>(33)</span></a>
+                            <a class="course-content " href="">建筑工程 <span>(18)</span></a>
+                            <a class="course-content " href="">人力资源 <span>(9)</span></a>
+                        </div>
+                    </div>
+                    <div class="course-type">
+                        <span>综合排序</span>
+                        <span>串讲</span>
+                        <span>精讲</span>
+
+                    </div>
+                    <div class="page">
+                        <div class="course-details">
+                            <div class="course-item">
+                                <a href="">
+                                    <div class="course-photo">
+                                        <img class="course-img" src="../../resource/images/micro-course/1.jpg"
+                                             alt="">
+                                        <div class="photo-hover"></div>
+                                    </div>
+                                    <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                    <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                    </p>
+                                    <p class="course-price">免费</p>
+                                </a>
+
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/2.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/3.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/4.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/5.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/6.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/7.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/8.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/9.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/10.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/11.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/12.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/13.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/14.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/15.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/16.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/17.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/18.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/19.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/20.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/1.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/2.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/3.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/4.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/5.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/6.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/7.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/8.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/9.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/10.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/11.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/12.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/13.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/14.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/15.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/16.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/17.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/18.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/20.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/19.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+
+
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/2.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/3.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/4.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/5.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/6.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/7.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/8.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/9.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/10.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/11.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/12.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/13.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/14.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/15.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/16.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/17.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/18.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/19.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/20.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/1.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/1.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/2.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/3.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/4.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/5.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/6.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/7.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/8.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/9.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/10.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/11.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/12.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/13.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/14.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/15.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/16.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/17.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/18.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/19.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/20.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/1.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/2.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/3.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/4.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/5.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/6.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/7.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/8.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/9.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/10.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/11.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/12.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/13.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/14.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/15.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/16.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/17.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/18.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/19.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/20.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/1.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/2.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/3.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/4.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/5.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/6.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/7.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/8.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/9.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/10.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/11.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/12.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/13.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/14.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/15.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/16.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/17.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/18.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/19.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-photo">
+                                    <img class="course-img" src="../../resource/images/micro-course/20.jpg"
+                                         alt="">
+                                    <div class="photo-hover"></div>
+                                </div>
+                                <p class="course-name">汤谷学院老师讲解中国近代史纲要</p>
+                                <p class="learn-details"><span>20.1</span><span>万次学习</span><span class="course-teacher">王老师</span>
+                                </p>
+                                <p class="course-price">免费</p>
+                            </div>
+                        </div>
+                        <div class="page-btn">
+                            <p id="page-btn-all">
+                                <!--<span class="page-button">1</span>-->
+                                <!--<span class="page-button">2</span>-->
+                                <!--<span class="page-button">3</span>-->
+                                <!--<span class="page-button">4</span>-->
+                                <!--<span class="page-button">5</span>-->
+                            </p>
+                            <span class="next-page" onclick="nextPage()">下一页</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container2 flex">
+                <div class="question-head">
+                 <h1>专业自考题库</h1>
+                    <p>汤谷学院累计做题道数</p>
+                    <div>
+                        <i class="doNumber"><span>9</span></i>
+                        <i class="doNumber"><span>8</span></i>
+                        <i class="doNumber"><span>7</span></i>
+                        <i class="doNumber"><span>6</span></i>
+                        <i class="doNumber"><span>5</span></i>
+                        <i class="doNumber"><span>4</span></i>
+                    </div>
+                </div>
+                <div  class="backRender">
+                    <div class="width-limit">
+                        <div class="navAndSearch">
+                            <p class="nav-left"><span>首页</span> <i class="fa fa-angle-right"></i> <span>专业首页</span>
+                                <i class="fa fa-angle-right"></i> <span class="micro-nav">微课</span></p>
+                            <p class="nav-right"><input class="search-input" type="text" placeholder="搜索知识点或关键词"/><i
+                                    class="fa fa-search fa-2x search-btn"></i></p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="course">
+                            <div class="course-left">
+                                <p>专业：</p>
+                            </div>
+                            <div class="course-right">
+                                <a class="course-content aColor" href="">全部专业课程 <span>(116)</span></a>
+                                <a class="course-content " href="">公共课 <span>(20)</span></a>
+                                <a class="course-content " href="">计算机及应用 <span>(22)</span></a>
+                                <a class="course-content " href="">汉语言文学 <span>(33)</span></a>
+                                <a class="course-content " href="">建筑工程 <span>(18)</span></a>
+                                <a class="course-content " href="">人力资源 <span>(9)</span></a>
+                            </div>
+                        </div>
+                        <div class="course-type">
+                            <span>综合排序</span>
+                            <span>串讲</span>
+                            <span>精讲</span>
+
+                        </div>
+                        <div class="page1">
+                            <div class="career-details">
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/21.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/22.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/23.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/24.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/25.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/26.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/27.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/28.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/29.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/30.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/31.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/32.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/29.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/21.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/22.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/23.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/24.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/25.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/26.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/27.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/28.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/30.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/31.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/32.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/30.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/21.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/22.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/23.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/24.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/25.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/26.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/27.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/28.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/29.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/31.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/32.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/31.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/21.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/22.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/23.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/24.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/25.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/26.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/27.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/28.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/29.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/30.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/32.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/32.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/21.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/22.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/23.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/24.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/25.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/26.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/27.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/28.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/29.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/30.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+                                <div class="career-item">
+                                    <a href="" class="blackColor">
+                                        <div class="course-photo">
+                                            <img class="course-img" src="../../resource/images/micro-course/31.jpg"
+                                                 alt="">
+                                            <div class="photo-hover"></div>
+                                        </div>
+                                        <h4 class="career-name">大学英语（ 一 ）
+                                            <span class="career-price">免费</span>
+                                        </h4>
+
+                                        <p class="learnNumber">还有<span>1500</span>人做题
+
+                                        </p>
+                                        <a href="" class="momentDo">马上做题</a>
+
+                                    </a>
+
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="page-btn">
+                                <p id="page-btn-all2">
+                                    <!--<span class="page-button">1</span>-->
+                                    <!--<span class="page-button">2</span>-->
+                                    <!--<span class="page-button">3</span>-->
+                                    <!--<span class="page-button">4</span>-->
+                                    <!--<span class="page-button">5</span>-->
+                                </p>
+                                <span class="next-page1" onclick="nextPage1()">下一页</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<footer class="foot">
+    <div class="in-foot">
+        <div class="logo-foot">
+            <img src="../../resource/images/home/b_logo.png" alt="">
+            <p class="margin-15">中国首家自学自考慕课平台，让每个有提升愿望的用户都能实现梦想</p>
+        </div>
+        <div class="andWe">
+            <h4 style=" padding-left: 10px;">关于我们</h4>
+            <div class="and-go">
+                <a class="and-go-on">关注我们</a>
+                <a class="and-go-on">联系我们</a>
+                <a class="and-go-on">人才招聘</a>
+                <a class="and-go-on">常见问题</a>
+                <a class="and-go-on">意见反馈</a>
+                <a class="and-go-on">法律条款</a>
+            </div>
+        </div>
+        <div class="attentionWe">
+            <h4>关注我们</h4>
+            <a href="" class="white-color margin30px"><span class="attention-go">
+            <i class="fa fa-weixin font-25 up5"></i>
+               </span>
+            </a>
+            <a href="" class="white-color"><span class="attention-go">
+            <i class="fa fa-weibo font-25 up5"></i>
+               </span>
+            </a>
+
+
+        </div>
+        <div class="copyright">
+            <span>蜀ICP备16008025 </span>
+            <span> | </span>
+            <span>©2017 www.tgmooc.com</span>
+        </div>
+        <div class="footer-foot">
+            <div class="foot-btn-left foot-as" onclick="leftScroll()">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="foot-btn-right foot-as" onclick="rightScroll()">
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="foot-content">
+
+                <ul id="long">
+                    <li class="foot-list"><a href="" class="white-foot"> 四川财政会计网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 成都教育局</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川省教育考试院</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 教育部学信网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川财政会计网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川省人事考试网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 职业咨询查询网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川财政会计网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川财政会计网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川财政会计网</a></li>
+                    <li class="foot-list"><a href="" class="white-foot"> 四川财政会计网</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../script/major.js">
+</script>
+</body>
+</html>
